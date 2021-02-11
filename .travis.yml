@@ -16,6 +16,7 @@ install:
   - pip install codacy-coverage
 script:
   - cd decide
+  - cp travis_local_settings.py local_settings.py
   - python3 manage.py test
 deploy:
   provider: heroku
