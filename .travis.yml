@@ -16,7 +16,7 @@ install:
   - pip install codacy-coverage
 script:
   - cd decide
-  - python3 ./manage.py test --keepdb
+  - python3 ./manage.py test
 deploy:
   provider: heroku
   app: examen19-830
